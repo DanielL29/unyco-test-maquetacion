@@ -1,0 +1,31 @@
+.button {
+  height: 48px;
+  width: 368px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.button.yellow {
+  background-color: #c5af19;
+}
+
+.button.transparent {
+  background-color: transparent;
+  border: 2px solid #d8d7ce;
+}
+
+.button:hover {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}

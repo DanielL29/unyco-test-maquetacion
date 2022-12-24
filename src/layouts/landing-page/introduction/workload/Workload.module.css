@@ -1,0 +1,46 @@
+.workload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 32px;
+}
+
+.workload > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 50%;
+}
+
+.workload .mobileWorkload {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .workload {
+    padding: 0 8px;
+    flex-direction: column;
+  }
+
+  .belowSection {
+    order: 2;
+    margin-top: 24px;
+  }
+
+  .workload .mobileWorkload {
+    display: initial;
+    order: 3;
+    width: 100%;
+  }
+
+  .workload .mobileWorkload h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0;
+  }
+}
