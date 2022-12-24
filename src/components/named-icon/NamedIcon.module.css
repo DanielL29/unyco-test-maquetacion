@@ -1,0 +1,56 @@
+.namedIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.namedIcon img {
+  width: 80px;
+  height: 80px;
+  transition: all 200ms ease-in-out;
+}
+
+.namedIcon img:hover {
+  transform: scale(1.15);
+}
+
+.namedIcon p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 16px;
+  text-align: center;
+}
+
+.namedIcon.horizontal {
+  flex-direction: row;
+}
+
+.namedIcon.vertical {
+  flex-direction: column;
+}
+
+.namedIcon.vertical p {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .namedIcon p {
+    font-size: 12px;
+  }
+
+  .namedIcon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .namedIcon.horizontal {
+    flex-direction: column;
+  }
+
+  .namedIcon.horizontal p {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+}
