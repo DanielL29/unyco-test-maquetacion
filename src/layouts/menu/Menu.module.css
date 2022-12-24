@@ -1,0 +1,126 @@
+.sidebarMenu {
+  display: none;
+}
+
+.sidebarMenu img {
+  width: 100%;
+  height: 20px;
+}
+
+.blackBackground {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.active {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  width: 240px;
+  top: 0;
+  right: 0;
+  padding: 24px 15px 16px 15px;
+  color: #858479;
+  font-size: 12px;
+  line-height: 16px;
+  z-index: 2;
+}
+
+.menu.active > img {
+  width: 94px;
+  height: 24px;
+  margin-bottom: 37px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 27px;
+  border-bottom: 1px solid #d8d7ce;
+  margin-bottom: 27px;
+}
+
+.welcome h1 {
+  font-size: 16px;
+}
+
+.welcome span {
+  color: #1d1a05;
+}
+
+.welcome img {
+  width: 18px;
+  height: 20px;
+}
+
+.welcome img.bell {
+  width: 23px;
+  margin-right: -3px;
+}
+
+.menuItems li {
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.menuItems li:hover {
+  color: #c5af19;
+}
+
+.menuItems li.last {
+  margin-bottom: 14px;
+  padding-bottom: 63px;
+  border-bottom: 1px solid #f2ecc9;
+}
+
+.contact h2 {
+  color: #1d1a05;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contact > div {
+  display: flex;
+  align-items: center;
+}
+
+.contact img {
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+}
+
+.contact h4 {
+  font-weight: 700;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid #f2ecc9;
+}
+
+.blackBackground.active {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .sidebarMenu {
+    display: initial;
+  }
+}
