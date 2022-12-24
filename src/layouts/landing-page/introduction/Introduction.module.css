@@ -1,0 +1,23 @@
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 1136px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1136px) {
+  .introduction {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    width: 100%;
+    padding: 0;
+  }
+}
