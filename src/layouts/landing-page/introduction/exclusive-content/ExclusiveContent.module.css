@@ -1,0 +1,40 @@
+.exclusiveContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.exclusiveContent h1 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #d8d7ce;
+  margin-bottom: 38px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .exclusiveContent {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .exclusiveContent h1 {
+    display: none;
+  }
+
+  .exclusiveContent button {
+    display: none;
+  }
+}
