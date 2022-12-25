@@ -24,6 +24,10 @@
   filter: brightness(0.8);
 }
 
+.button.hidden {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .button {
     width: 100%;

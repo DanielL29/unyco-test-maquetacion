@@ -5,6 +5,7 @@ import styles from "./Workload.module.css";
 import Button from "../../../../components/button";
 
 import useDynamicWidth from "../../../../hooks/useDynamicWidth";
+import Title from "../../../../components/title";
 
 export default function Workload() {
   const { dynamicWidth } = useDynamicWidth();
@@ -19,7 +20,12 @@ export default function Workload() {
         text={dynamicWidth < 768 ? "SOLICITAR INFORMACIÓN" : "MAS INFORMACIÓN"}
       />
       <div className={styles.mobileWorkload}>
-        <h3>APRENDE NATACIÓN CON UNA CAMPEONA OLÍMPICA</h3>
+        <Title
+          text="APRENDE NATACIÓN CON UNA CAMPEONA OLÍMPICA"
+          marginTop={30}
+          marginBottom={30}
+          hidden={dynamicWidth > 768}
+        />
         <Button text="PREGUNTAS FRECUENTES" theme="transparent" />
       </div>
     </div>

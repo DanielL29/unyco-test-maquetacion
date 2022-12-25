@@ -1,0 +1,83 @@
+.lessonPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f6f4ef;
+  border-radius: 4px;
+  width: 944px;
+  height: 805px;
+  margin-bottom: 41px;
+  padding: 0 16px;
+}
+
+.lesson {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-weight: 400;
+  padding: 26px 20px;
+  border-bottom: 1px solid #d8d7ce;
+}
+
+.lesson span {
+  color: #858479;
+  font-size: 36px;
+  margin-right: 16px;
+  margin-top: -5px;
+}
+
+.lesson h2 {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.lesson p {
+  color: #858479;
+  font-size: 16px;
+  line-height: 24px;
+  width: 90%;
+}
+
+.lesson.last {
+  border: none;
+  background: linear-gradient(
+    360deg,
+    #f6f4ef 38.89%,
+    rgba(246, 244, 239, 0.5) 100%
+  );
+}
+
+.lesson.last h2,
+.lesson.last span {
+  background: -webkit-linear-gradient(#c5c5c5, #a6a6a6);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lesson.last span {
+  opacity: 0.5;
+}
+
+.viewAll {
+  outline: none;
+  border: 2px solid #1d1a05;
+  border-radius: 4px;
+  height: 40px;
+  width: 180px;
+  border-radius: 4px;
+  align-self: center;
+  margin-top: -20px;
+  color: #1d1a05;
+  font-size: 12px;
+  font-weight: 700;
+}

@@ -8,13 +8,6 @@
   margin-bottom: 40px;
 }
 
-.exclusiveContent h1 {
-  font-weight: 400;
-  font-size: 28px;
-  color: #d8d7ce;
-  margin-bottom: 38px;
-}
-
 .icons {
   display: flex;
   align-items: center;
@@ -28,10 +21,6 @@
   .exclusiveContent {
     width: 100%;
     padding: 0 15px;
-  }
-
-  .exclusiveContent h1 {
-    display: none;
   }
 
   .exclusiveContent button {
