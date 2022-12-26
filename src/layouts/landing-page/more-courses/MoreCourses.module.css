@@ -1,0 +1,35 @@
+.moreCourses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1136px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.moreCourses > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+@media (max-width: 1136px) {
+  .moreCourses {
+    width: 100%;
+    height: 365px;
+    padding: 0 8px;
+    overflow-y: scroll;
+  }
+
+  .moreCourses::-webkit-scrollbar {
+    display: none;
+  }
+
+  .moreCourses > div {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
