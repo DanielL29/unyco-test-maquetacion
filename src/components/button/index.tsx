@@ -9,6 +9,7 @@ interface IButtonProps {
   width?: number;
   marginTop?: number;
   marginBottom?: number;
+  fontSize?: number;
   type?: "button" | "submit" | "reset";
 }
 
@@ -20,6 +21,7 @@ export default function Button({
   width,
   marginTop,
   marginBottom,
+  fontSize,
   type = "button",
 }: IButtonProps) {
   return (
@@ -32,6 +34,7 @@ export default function Button({
         width: `${width}px`,
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
+        fontSize: `${fontSize}px`,
       }}
       type={type}
     >
