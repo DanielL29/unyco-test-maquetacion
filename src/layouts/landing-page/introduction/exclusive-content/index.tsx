@@ -20,10 +20,30 @@ export default function ExclusiveContent() {
         hidden={dynamicWidth < 768}
       />
       <div className={styles.icons}>
-        <NamedIcon text="E-BOOKS" icon={book} position="vertical" />
-        <NamedIcon text="360° VIDEOS" icon={icon360} position="vertical" />
-        <NamedIcon text="TESTS" icon={tests} position="vertical" />
-        <NamedIcon text="TAREAS" icon={tasks} position="vertical" />
+        <NamedIcon
+          text="E-books"
+          icon={book}
+          position="vertical"
+          small={dynamicWidth < 768}
+        />
+        <NamedIcon
+          text="360° Videos"
+          icon={icon360}
+          position="vertical"
+          small={dynamicWidth < 768}
+        />
+        <NamedIcon
+          text="Tests"
+          icon={tests}
+          position="vertical"
+          small={dynamicWidth < 768}
+        />
+        <NamedIcon
+          text="Tareas"
+          icon={tasks}
+          position="vertical"
+          small={dynamicWidth < 768}
+        />
       </div>
       <Button text="MAS INFORMACIÓN" />
     </div>
