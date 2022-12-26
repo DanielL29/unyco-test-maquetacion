@@ -19,7 +19,6 @@
 @media (max-width: 1136px) {
   .moreCourses {
     width: 100%;
-    height: 365px;
     padding: 0 8px;
     overflow-y: scroll;
   }
@@ -31,5 +30,11 @@
   .moreCourses > div {
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .moreCourses {
+    height: 365px;
   }
 }

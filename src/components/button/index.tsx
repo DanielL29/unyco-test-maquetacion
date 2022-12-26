@@ -1,3 +1,4 @@
+import { ButtonHTMLAttributes } from "react";
 import styles from "./Button.module.css";
 
 interface IButtonProps {
@@ -8,6 +9,7 @@ interface IButtonProps {
   width?: number;
   marginTop?: number;
   marginBottom?: number;
+  type?: "button" | "submit" | "reset";
 }
 
 export default function Button({
@@ -18,6 +20,7 @@ export default function Button({
   width,
   marginTop,
   marginBottom,
+  type = "button",
 }: IButtonProps) {
   return (
     <button
@@ -30,6 +33,7 @@ export default function Button({
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
       }}
+      type={type}
     >
       {text}
     </button>
