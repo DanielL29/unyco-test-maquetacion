@@ -23,11 +23,13 @@
   .workload {
     padding: 0 8px;
     flex-direction: column;
+    margin-top: 15px;
   }
 
   .belowSection {
     order: 2;
     margin-top: 24px;
+    min-width: 200px;
   }
 
   .workload .mobileWorkload {
