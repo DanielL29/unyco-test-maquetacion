@@ -1,6 +1,7 @@
 import Introduction from "../../layouts/landing-page/introduction";
 import LessonPlan from "../../layouts/landing-page/lesson-plan";
 import MoreCourses from "../../layouts/landing-page/more-courses";
+import MoreInformation from "../../layouts/landing-page/more-information";
 import styles from "./LandingPage.module.css";
 
 export default function LandingPage() {
@@ -14,6 +15,9 @@ export default function LandingPage() {
       </section>
       <section>
         <MoreCourses />
+      </section>
+      <section>
+        <MoreInformation />
       </section>
     </main>
   );
