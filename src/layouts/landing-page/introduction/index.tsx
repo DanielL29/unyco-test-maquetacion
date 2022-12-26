@@ -1,4 +1,4 @@
-import Banner from "../../../components/banner";
+import Banner from "./banner";
 
 import Workload from "./workload";
 import Slider from "./slider";

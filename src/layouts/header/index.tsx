@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import useUser from "../../hooks/useUser";
 import arrow from "../../assets/images/arrow.png";
 import { useState } from "react";
-import Dropdown from "../../components/dropdown";
+import Dropdown from "./dropdown";
 import Menu from "../menu";
 
 export default function Header() {

@@ -2,19 +2,7 @@ import styles from "./Slider.module.css";
 
 import useSpotlight, { Spotlight } from "../../../../hooks/api/useSpotlight";
 import { useEffect, useState } from "react";
-
-interface IPreviewProps {
-  spotlight: Spotlight;
-}
-
-function Preview({ spotlight }: IPreviewProps) {
-  return (
-    <div className={styles.content}>
-      <img src={spotlight.image} alt="next-image" />
-      <h2>{spotlight.title}</h2>
-    </div>
-  );
-}
+import Preview from "./preview";
 
 export default function Slider() {
   const { spotlights } = useSpotlight();

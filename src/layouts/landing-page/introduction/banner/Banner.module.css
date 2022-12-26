@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: flex-end;
 
-  background: url("../../assets/images/jump-water.png");
+  background: url("../../../../assets/images/jump-water.png");
   background-repeat: no-repeat;
   background-size: 100%;
   object-fit: contain;
@@ -31,7 +31,7 @@
 
 @media (max-width: 768px) {
   .banner {
-    background: url("../../assets/images/swimming.png");
+    background: url("../../../../assets/images/swimming.png");
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: 100%;
