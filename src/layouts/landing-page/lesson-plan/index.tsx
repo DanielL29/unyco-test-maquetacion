@@ -1,30 +1,37 @@
 import Title from "../../../components/title";
+import Button from "../../../components/button";
+import Lesson from "./lesson";
+
 import styles from "./LessonPlan.module.css";
+
 import { lessonPlans } from "../../../mock/lessonPlan";
+import useDynamicWidth from "../../../hooks/useDynamicWidth";
 
-interface ILessonProps {
-  number: string;
-  title: string;
-  description: string;
-  last: boolean;
-}
-
-function Lesson({ number, title, description, last = false }: ILessonProps) {
-  return (
-    <div className={`${styles.lesson} ${last ? styles.last : ""}`}>
-      <span>{number}</span>
-      <div>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-}
+import star from "../../../assets/images/star.png";
 
 export default function LessonPlan() {
+  const { dynamicWidth } = useDynamicWidth();
+
+  function LessonButton() {
+    if (dynamicWidth < 768) {
+      return (
+        <Button
+          text="VER PROGRAMA COMPLETO"
+          theme="transparent"
+          marginTop={10}
+        />
+      );
+    } else {
+      return <button className={styles.viewAll}>VER TODOS</button>;
+    }
+  }
+
   return (
     <div className={styles.lessonPlan}>
-      <Title text="LESSON PLAN" marginBottom={19} />
+      <Title
+        text={dynamicWidth < 768 ? "DESTAQUES del curso" : "LESSON PLAN"}
+        marginBottom={19}
+      />
       <div className={styles.lessons}>
         {lessonPlans.map((lesson, index) => (
           <Lesson
@@ -35,7 +42,20 @@ export default function LessonPlan() {
             last={index === lessonPlans.length - 1}
           />
         ))}
-        <button className={styles.viewAll}>VER TODOS</button>
+        <LessonButton />
+        <div className={styles.mobileStudentSatisfaction}>
+          <div>
+            <img src={star} alt="star" />
+            <h2>
+              Los estudiantes le dan a Unycos una calificación promedio de 4.7
+              de 5 estrellas.
+            </h2>
+          </div>
+          <p>
+            100% de garantía de satisfacción. 30 días de garantía de devolución
+            de dinero.
+          </p>
+        </div>
       </div>
     </div>
   );
