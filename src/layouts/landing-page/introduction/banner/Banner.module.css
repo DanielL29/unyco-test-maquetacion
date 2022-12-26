@@ -3,14 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-
   background: radial-gradient(
       48.06% 82.5% at 51.94% 45%,
       rgba(0, 0, 0, 0) 46.8%,
       #000000 100%
     ),
     linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 26.74%),
-    url("../../assets/images/jump-water.png");
+    url("../../../../assets/images/jump-water.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: 30%;
@@ -39,7 +38,7 @@
 @media (max-width: 768px) {
   .banner {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 26.74%),
-      url("../../assets/images/swimming.png");
+      url("../../../../assets/images/swimming.png");
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: 100%;

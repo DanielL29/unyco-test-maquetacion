@@ -1,5 +1,5 @@
 import styles from "./Dropdown.module.css";
-import useUser from "../../hooks/useUser";
+import useUser from "../../../hooks/useUser";
 
 interface IDropdownProps {
   dropdown: boolean;
