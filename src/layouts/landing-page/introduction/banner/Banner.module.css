@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+
   background: radial-gradient(
       48.06% 82.5% at 51.94% 45%,
       rgba(0, 0, 0, 0) 46.8%,
@@ -21,13 +22,13 @@
 }
 
 .banner h1 {
-  font-size: 36px;
+  font-size: 28px;
   color: #fff;
   margin-bottom: 11px;
 }
 
 .banner h2 {
-  font-size: 28px;
+  font-size: 20px;
   color: #999;
 }
 
@@ -36,6 +37,19 @@
 }
 
 @media (max-width: 768px) {
+  .banner h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+
+  .banner h2 {
+    color: #666;
+  }
+
+  .banner span {
+    color: #999;
+  }
+
   .banner {
     background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 26.74%),
       url("../../../../assets/images/swimming.png");
@@ -43,5 +57,7 @@
     object-fit: cover;
     background-size: 100%;
     background-position-y: center;
+    margin-top: -50px;
+    height: 400px;
   }
 }
