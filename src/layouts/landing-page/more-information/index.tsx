@@ -97,7 +97,7 @@ export default function MoreInformation() {
           </InfoCheckbox>
         </div>
         <Button
-          text="enviar"
+          children="enviar"
           marginTop={dynamicWidth < 768 ? 0 : 21}
           marginBottom={40}
           type="submit"

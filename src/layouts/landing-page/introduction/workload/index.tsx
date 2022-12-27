@@ -17,7 +17,9 @@ export default function Workload() {
         <NamedIcon text="+3.5 HORAS" icon={schedule} />
       </div>
       <Button
-        text={dynamicWidth < 768 ? "SOLICITAR INFORMACIÓN" : "MAS INFORMACIÓN"}
+        children={
+          dynamicWidth < 768 ? "SOLICITAR INFORMACIÓN" : "MAS INFORMACIÓN"
+        }
       />
       <div className={styles.mobileWorkload}>
         <Title
@@ -26,7 +28,7 @@ export default function Workload() {
           marginBottom={30}
           hidden={dynamicWidth > 768}
         />
-        <Button text="PREGUNTAS FRECUENTES" theme="transparent" />
+        <Button children="PREGUNTAS FRECUENTES" theme="transparent" />
       </div>
     </div>
   );

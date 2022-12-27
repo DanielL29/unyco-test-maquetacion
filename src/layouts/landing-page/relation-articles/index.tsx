@@ -32,7 +32,7 @@ export default function RelationArticles() {
         </div>
       </div>
       <Button
-        text="leer más en nuestro blog"
+        children="leer más en nuestro blog"
         theme="transparent"
         fontSize={12}
         marginBottom={45}

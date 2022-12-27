@@ -45,7 +45,7 @@ export default function ExclusiveContent() {
           small={dynamicWidth < 768}
         />
       </div>
-      <Button text="MAS INFORMACIÓN" />
+      <Button children="MAS INFORMACIÓN" />
     </div>
   );
 }

@@ -40,7 +40,9 @@ export default function Header() {
       <header className={styles.header}>
         <div></div>
         <div className={styles.logo}>
-          <img src={logoUnycos} alt="logo-unycos" />
+          <a href="https://unycos.com" target="_blank">
+            <img src={logoUnycos} alt="logo-unycos" />
+          </a>
         </div>
         <ul className={styles.navbarItems}>
           <li>CURSOS</li>
