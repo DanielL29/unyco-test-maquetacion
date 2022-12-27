@@ -1,0 +1,194 @@
+.footerBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: inset 0px 0px 1px #ffffff;
+  height: 344px;
+  width: 100%;
+  margin-bottom: 43px;
+  position: relative;
+}
+
+.footerBackground > img,
+.footerBackground .backgroundContent {
+  position: absolute;
+}
+
+.footerBackground > img {
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
+}
+
+.footerBackground .backgroundContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerBackground .backgroundContent > div {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.footerInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.footerInfos a {
+  margin-right: 35px;
+}
+
+.footerInfos a:last-child {
+  margin-right: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 480px;
+  border-bottom: 1px solid #858479;
+  padding-bottom: 24px;
+}
+
+.lastInfos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px 27px;
+}
+
+.lastInfos .terms {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 480px;
+}
+
+.lastInfos .bankNotes {
+  width: 125px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.lastInfos h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #858479;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.lastInfos h3:hover {
+  filter: brightness(1.5);
+}
+
+.lastInfos h4 {
+  font-weight: 700;
+  font-size: 8px;
+  color: #fff;
+  margin-right: 14px;
+}
+
+.lastInfos h5 {
+  font-weight: 700;
+  font-size: 8px;
+  color: #858479;
+}
+
+.lastInfos h5:last-child {
+  margin-left: 15px;
+}
+
+.lastInfos img {
+  width: 93px;
+  height: 24px;
+}
+
+.contact {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footerBackground {
+    box-shadow: none;
+    height: 0;
+  }
+
+  .footerBackground > img {
+    display: none;
+  }
+
+  .footerBackground .backgroundContent > div,
+  .icons {
+    width: 100%;
+  }
+
+  .icons {
+    border: none;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .contact img {
+    margin-right: 4px;
+  }
+
+  .contact h2 {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .lastInfos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lastInfos img {
+    width: 46px;
+    height: 12px;
+  }
+
+  .lastInfos a {
+    order: 1;
+    flex: 1;
+  }
+
+  .lastInfos .terms {
+    justify-content: space-between;
+    width: 100%;
+    order: 3;
+    margin-top: 14px;
+  }
+
+  .lastInfos .terms h3 {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+
+  .lastInfos .bankNotes {
+    order: 2;
+  }
+}
