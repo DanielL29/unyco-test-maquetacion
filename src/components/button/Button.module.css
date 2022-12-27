@@ -1,4 +1,8 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 48px;
   width: 368px;
   border-radius: 4px;
@@ -11,6 +15,7 @@
   cursor: pointer;
   text-transform: uppercase;
   margin: 0 auto;
+  text-align: center;
 }
 
 .button.yellow {
@@ -19,6 +24,7 @@
 
 .button.transparent {
   background-color: transparent;
+  color: #d8d7ce;
   border: 2px solid #d8d7ce;
 }
 

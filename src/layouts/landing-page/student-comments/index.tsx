@@ -43,7 +43,7 @@ export default function StudentComments() {
         ))}
       </div>
       <Button
-        text="VER MÁS"
+        children="VER MÁS"
         theme="transparent"
         width={180}
         height={40}

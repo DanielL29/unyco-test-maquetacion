@@ -1,8 +1,8 @@
-import { ButtonHTMLAttributes } from "react";
+import { ReactNode } from "react";
 import styles from "./Button.module.css";
 
 interface IButtonProps {
-  text: string;
+  children: ReactNode;
   theme?: "yellow" | "transparent";
   hidden?: boolean;
   height?: number;
@@ -14,7 +14,7 @@ interface IButtonProps {
 }
 
 export default function Button({
-  text,
+  children,
   theme = "yellow",
   hidden = false,
   height,
@@ -38,7 +38,7 @@ export default function Button({
       }}
       type={type}
     >
-      {text}
+      {children}
     </button>
   );
 }

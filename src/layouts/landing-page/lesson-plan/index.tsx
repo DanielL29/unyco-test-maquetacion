@@ -16,7 +16,7 @@ export default function LessonPlan() {
     if (dynamicWidth < 768) {
       return (
         <Button
-          text="VER PROGRAMA COMPLETO"
+          children="VER PROGRAMA COMPLETO"
           theme="transparent"
           marginTop={10}
         />
