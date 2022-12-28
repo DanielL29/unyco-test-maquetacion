@@ -24,7 +24,7 @@ export default function InfoInput({
 
     event.setCustomValidity("");
 
-    if (!event.validity.valid) {
+    if (event.type === "tel" && !event.validity.valid) {
       return event.setCustomValidity(
         "O número de telefone deve precisa estar no formato: 018997157418"
       );

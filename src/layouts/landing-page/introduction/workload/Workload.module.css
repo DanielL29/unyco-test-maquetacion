@@ -5,14 +5,20 @@
 
   width: 100%;
   margin-top: 32px;
+  position: relative;
 }
 
-.workload > div {
+.workload .belowSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 50%;
+}
+
+.workload > button {
+  position: absolute;
+  right: 0;
 }
 
 .workload .mobileWorkload {
@@ -24,6 +30,12 @@
     padding: 0 8px;
     flex-direction: column;
     margin-top: 15px;
+    position: initial;
+  }
+
+  .workload > button {
+    position: initial;
+    right: initial;
   }
 
   .belowSection {

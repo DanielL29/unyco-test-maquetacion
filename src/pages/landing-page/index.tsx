@@ -9,22 +9,22 @@ import styles from "./LandingPage.module.css";
 export default function LandingPage() {
   return (
     <main className={styles.landingPage}>
-      <section>
+      <section className={styles.introductionSection}>
         <Introduction />
       </section>
-      <section>
+      <section className={styles.lessonPlanSection}>
         <LessonPlan />
       </section>
-      <section>
+      <section className={styles.moreCoursesSection}>
         <MoreCourses />
       </section>
-      <section>
+      <section className={styles.moreInformationSection}>
         <MoreInformation />
       </section>
-      <section>
+      <section className={styles.studentCommentsSection}>
         <StudentComments />
       </section>
-      <section>
+      <section className={styles.relationArticlesSection}>
         <RelationArticles />
       </section>
     </main>

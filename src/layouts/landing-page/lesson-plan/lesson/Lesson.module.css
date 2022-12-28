@@ -84,6 +84,7 @@
     font-size: 14px;
     color: #858479;
     margin-bottom: 0;
+    text-transform: none;
   }
 
   .lesson p {

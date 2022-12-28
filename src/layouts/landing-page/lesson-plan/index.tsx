@@ -19,6 +19,7 @@ export default function LessonPlan() {
           children="VER PROGRAMA COMPLETO"
           theme="transparent"
           marginTop={10}
+          fontSize={12}
         />
       );
     } else {
@@ -30,7 +31,7 @@ export default function LessonPlan() {
     <div className={styles.lessonPlan}>
       <Title
         text={dynamicWidth < 768 ? "DESTAQUES del curso" : "LESSON PLAN"}
-        marginBottom={19}
+        marginBottom={dynamicWidth < 768 ? 14 : 19}
       />
       <div className={styles.lessons}>
         {lessonPlans.map((lesson, index) => (

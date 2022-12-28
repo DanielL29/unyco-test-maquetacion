@@ -20,15 +20,20 @@ export default function Workload() {
         children={
           dynamicWidth < 768 ? "SOLICITAR INFORMACIÓN" : "MAS INFORMACIÓN"
         }
+        fontSize={dynamicWidth < 768 ? 12 : 16}
       />
       <div className={styles.mobileWorkload}>
         <Title
           text="APRENDE NATACIÓN CON UNA CAMPEONA OLÍMPICA"
-          marginTop={30}
-          marginBottom={30}
+          marginTop={29}
+          marginBottom={36}
           hidden={dynamicWidth > 768}
         />
-        <Button children="PREGUNTAS FRECUENTES" theme="transparent" />
+        <Button
+          children="PREGUNTAS FRECUENTES"
+          theme="transparent"
+          fontSize={dynamicWidth < 768 ? 12 : 16}
+        />
       </div>
     </div>
   );
