@@ -26,7 +26,7 @@ export default function Header() {
     } else {
       return (
         <>
-          <li>REGISTER</li>
+          <li onClick={signIn}>REGISTER</li>
           <li onClick={signIn} className={styles.noRight}>
             LOG IN
           </li>
