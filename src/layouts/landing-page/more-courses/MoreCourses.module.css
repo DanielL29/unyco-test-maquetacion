@@ -21,6 +21,7 @@
     width: 100%;
     padding: 0 8px;
     overflow-y: scroll;
+    margin-bottom: 32px;
   }
 
   .moreCourses::-webkit-scrollbar {
@@ -35,6 +36,6 @@
 
 @media (max-width: 768px) {
   .moreCourses {
-    height: 365px;
+    height: 360px;
   }
 }

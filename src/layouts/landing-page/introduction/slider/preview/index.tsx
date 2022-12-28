@@ -1,3 +1,4 @@
+import { Spotlight } from "../../../../../hooks/api/useSpotlight";
 import styles from "./Preview.module.css";
 
 interface IPreviewProps {

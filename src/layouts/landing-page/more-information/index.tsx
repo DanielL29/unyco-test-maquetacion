@@ -57,7 +57,10 @@ export default function MoreInformation() {
 
   return (
     <div className={styles.moreInformation}>
-      <Title text="OBTÉN MÁS INFORMACiÓN" marginBottom={32} />
+      <Title
+        text="OBTÉN MÁS INFORMACiÓN"
+        marginBottom={dynamicWidth < 768 ? 18 : 32}
+      />
       <form onSubmit={submitUserInfo}>
         <InfoInput
           name="name"

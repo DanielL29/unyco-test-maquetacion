@@ -22,13 +22,13 @@
 }
 
 .banner h1 {
-  font-size: 28px;
+  font-size: 36px;
   color: #fff;
   margin-bottom: 11px;
 }
 
 .banner h2 {
-  font-size: 20px;
+  font-size: 28px;
   color: #999;
 }
 
@@ -43,6 +43,7 @@
   }
 
   .banner h2 {
+    font-size: 20px;
     color: #666;
   }
 

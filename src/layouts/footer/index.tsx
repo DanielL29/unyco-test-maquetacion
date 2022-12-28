@@ -38,13 +38,15 @@ export default function Footer() {
               hidden={dynamicWidth < 768}
             />
           </div>
-          <Button
-            children="leer más en nuestro blog"
-            marginBottom={61}
-            height={48}
-            theme="transparent"
-            hidden={dynamicWidth < 768}
-          />
+          <a href="https://unycos.com/blog" target="_blank">
+            <Button
+              children="leer más en nuestro blog"
+              marginBottom={61}
+              height={48}
+              theme="transparent"
+              hidden={dynamicWidth < 768}
+            />
+          </a>
         </div>
       </div>
       <div className={styles.footerInfos}>

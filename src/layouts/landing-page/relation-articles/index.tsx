@@ -31,13 +31,15 @@ export default function RelationArticles() {
           <span>22.06.2019</span>
         </div>
       </div>
-      <Button
-        children="leer más en nuestro blog"
-        theme="transparent"
-        fontSize={12}
-        marginBottom={45}
-        width={dynamicWidth < 768 ? 240 : 368}
-      />
+      <a href="https://unycos.com/blog" target="_blank">
+        <Button
+          children="leer más en nuestro blog"
+          theme="transparent"
+          fontSize={12}
+          marginBottom={45}
+          width={dynamicWidth < 768 ? 240 : 368}
+        />
+      </a>
     </div>
   );
 }
