@@ -5,9 +5,11 @@ import arrow from "../../assets/images/arrow.png";
 import { useState } from "react";
 import Dropdown from "./dropdown";
 import Menu from "../menu";
+import useDynamicWidth from "../../hooks/useDynamicWidth";
 
 export default function Header() {
   const { user, signIn } = useUser();
+  const { dynamicWidth } = useDynamicWidth();
   const [dropdown, setDropdown] = useState(false);
 
   function NavbarItems() {
@@ -50,7 +52,11 @@ export default function Header() {
         </ul>
         <Menu />
       </header>
-      <Dropdown dropdown={dropdown} setDropdown={setDropdown} />
+      {dynamicWidth > 768 ? (
+        <Dropdown dropdown={dropdown} setDropdown={setDropdown} />
+      ) : (
+        <></>
+      )}
     </>
   );
 }
