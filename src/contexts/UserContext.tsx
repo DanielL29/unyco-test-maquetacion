@@ -18,15 +18,20 @@ const UserContext = createContext({} as IUserContext);
 
 export function UserProvider({ children }: Props) {
   const [user, setUser] = useState<UserProps>({} as UserProps);
-  const fakeUser: UserProps = { name: "DANIEL" };
 
   if (user.name === undefined && localStorage.getItem("localUser") !== null) {
-    setUser(fakeUser);
+    const localUser: UserProps = JSON.parse(localStorage.getItem("localUser")!);
+
+    setUser(localUser);
   }
 
   function signIn(): void {
-    setUser(fakeUser);
-    localStorage.setItem("localUser", JSON.stringify(fakeUser));
+    const name = prompt("Cual es tu nombre ?")?.toUpperCase();
+
+    if (name) {
+      setUser({ name });
+      localStorage.setItem("localUser", JSON.stringify({ name }));
+    }
   }
 
   function logout(): void {
