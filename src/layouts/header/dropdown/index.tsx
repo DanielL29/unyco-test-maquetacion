@@ -15,14 +15,16 @@ export default function Dropdown({ dropdown, setDropdown }: IDropdownProps) {
   }
 
   return (
-    <ul className={dropdown ? styles.showOptions : styles.hideOptions}>
-      <li>PANEL DE CONTROL</li>
-      <li>TUS CURSOS</li>
-      <li>PERFIL</li>
-      <li>CUENTA</li>
-      <li className={styles.logout} onClick={finishSession}>
-        CERRAR SESÍON
-      </li>
-    </ul>
+    <div className={styles.dropdown}>
+      <ul className={dropdown ? styles.showOptions : styles.hideOptions}>
+        <li>PANEL DE CONTROL</li>
+        <li>TUS CURSOS</li>
+        <li>PERFIL</li>
+        <li>CUENTA</li>
+        <li className={styles.logout} onClick={finishSession}>
+          CERRAR SESÍON
+        </li>
+      </ul>
+    </div>
   );
 }

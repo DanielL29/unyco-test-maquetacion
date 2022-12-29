@@ -17,19 +17,14 @@
 }
 
 .moreCourses > div a {
-  width: 100%;
+  width: fit-content;
 }
 
 @media (max-width: 1136px) {
   .moreCourses {
     width: 100%;
     padding: 0 8px;
-    overflow-y: scroll;
     margin-bottom: 32px;
-  }
-
-  .moreCourses::-webkit-scrollbar {
-    display: none;
   }
 
   .moreCourses > div {
@@ -41,5 +36,14 @@
 @media (max-width: 768px) {
   .moreCourses {
     height: 360px;
+    overflow-y: scroll;
+  }
+
+  .moreCourses::-webkit-scrollbar {
+    display: none;
+  }
+
+  .moreCourses > div a {
+    width: 100%;
   }
 }
