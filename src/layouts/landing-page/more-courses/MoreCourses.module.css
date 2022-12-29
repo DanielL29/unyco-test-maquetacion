@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+.moreCourses > div a {
+  width: 100%;
+}
+
 @media (max-width: 1136px) {
   .moreCourses {
     width: 100%;
