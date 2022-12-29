@@ -42,6 +42,10 @@
 }
 
 @media (max-width: 944px) {
+  .lessonPlan {
+    padding: 0 8px;
+  }
+
   .lessons {
     width: 100%;
     height: auto;
