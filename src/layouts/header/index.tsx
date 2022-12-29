@@ -43,7 +43,10 @@ export default function Header() {
         <header className={styles.header}>
           <div
             className={styles.logo}
-            style={{ marginLeft: user.name ? "170px" : "205px" }}
+            style={{
+              marginLeft:
+                dynamicWidth < 768 ? "35px" : user.name ? "170px" : "205px",
+            }}
           >
             <a href="https://unycos.com" target="_blank">
               <img src={logoUnycos} alt="logo-unycos" />
