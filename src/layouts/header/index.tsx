@@ -39,19 +39,23 @@ export default function Header() {
 
   return (
     <>
-      <header className={styles.header}>
-        <div></div>
-        <div className={styles.logo}>
-          <a href="https://unycos.com" target="_blank">
-            <img src={logoUnycos} alt="logo-unycos" />
-          </a>
-        </div>
-        <ul className={styles.navbarItems}>
-          <li>CURSOS</li>
-          <NavbarItems />
-        </ul>
-        <Menu />
-      </header>
+      <div className={styles.headerContainer}>
+        <header className={styles.header}>
+          <div
+            className={styles.logo}
+            style={{ marginLeft: user.name ? "170px" : "205px" }}
+          >
+            <a href="https://unycos.com" target="_blank">
+              <img src={logoUnycos} alt="logo-unycos" />
+            </a>
+          </div>
+          <ul className={styles.navbarItems}>
+            <li>CURSOS</li>
+            <NavbarItems />
+          </ul>
+          <Menu />
+        </header>
+      </div>
       {dynamicWidth > 768 ? (
         <Dropdown dropdown={dropdown} setDropdown={setDropdown} />
       ) : (
